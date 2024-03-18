@@ -1,0 +1,30 @@
+❯ git clone --bare https://github.com/sinanuozdemir/quick-start-guide-to-llms.git quick-start-guide-to-llms
+Cloning into bare repository 'quick-start-guide-to-llms'...
+remote: Enumerating objects: 150, done.
+remote: Counting objects: 100% (50/50), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 150 (delta 30), reused 27 (delta 16), pack-reused 100
+Receiving objects: 100% (150/150), 84.19 MiB | 19.57 MiB/s, done.
+Resolving deltas: 100% (59/59), done.
+
+
+❯ cd quick-start-guide-to-llms
+
+
+❯ git push --mirror git@github.com:kimwooglae/quick-start-guide-to-llms.git
+Enumerating objects: 150, done.
+Counting objects: 100% (150/150), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (88/88), done.
+Writing objects: 100% (150/150), 84.19 MiB | 3.27 MiB/s, done.
+Total 150 (delta 59), reused 150 (delta 59), pack-reused 0
+remote: Resolving deltas: 100% (59/59), done.
+remote: warning: See https://gh.io/lfs for more information.
+remote: warning: File data/chip2.csv is 87.15 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File data/comparison_data_v2.json is 77.70 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To github.com:kimwooglae/quick-start-guide-to-llms.git
+ * [new branch]      main -> main
+ * [new branch]      so/new_fine_tuning_notebook -> so/new_fine_tuning_notebook
+❯ cd ..
+❯ rm -rf quick-start-guide-to-llms
